@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Meals · MessMate</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css"></head>
+<body><div class="shell"><aside class="side" id="side" aria-label="Sidebar"></aside>
+<div><button class="btn alt menu-btn" id="menuBtn" aria-label="Open menu">☰ Menu</button>
+<main>
+<div class="head"><div><h1>Meals</h1><p class="muted">Members set meals for today or later. The manager can edit any date.</p></div><div class="field" style="margin:0"><label for="month">Month</label><input type="month" id="month"></div></div>
+<section class="card"><h2>Add / update a day</h2>
+<div class="row">
+  <div id="whoBox" hidden><label for="who">Member</label><select id="who"></select></div>
+  <div><label for="date">Date</label><input type="date" id="date"></div>
+  <div><label for="mb">Breakfast</label><input type="number" id="mb" min="0" max="5" value="0"></div>
+  <div><label for="ml">Lunch</label><input type="number" id="ml" min="0" max="5" value="1"></div>
+  <div><label for="md">Dinner</label><input type="number" id="md" min="0" max="5" value="1"></div>
+  <div><button class="btn green" id="save">Save</button></div></div></section>
+<section class="card"><div class="tablewrap"><table><thead><tr><th>Date</th><th>Member</th><th class="right">Breakfast</th><th class="right">Lunch</th><th class="right">Dinner</th><th class="right">Counted</th><th></th></tr></thead><tbody id="rows"></tbody></table></div></section></main></div></div>
+<script src="js/app.js"></script><script src="js/meals.js"></script></body></html>

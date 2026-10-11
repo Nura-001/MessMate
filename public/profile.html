@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>My Profile · MessMate</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css"></head>
+<body><div class="shell"><aside class="side" id="side" aria-label="Sidebar"></aside>
+<div><button class="btn alt menu-btn" id="menuBtn" aria-label="Open menu">☰ Menu</button>
+<main>
+<div class="head"><div><h1>My Profile</h1><p class="muted" id="meta"></p></div></div>
+<div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(300px,1fr))">
+<section class="card"><h2>Personal details</h2>
+<div class="field"><label for="name">Full name</label><input id="name" maxlength="60"></div>
+<div class="field"><label for="email">Email (cannot be changed)</label><input id="email" disabled></div>
+<div class="field"><label for="phone">Phone</label><input id="phone" maxlength="20"></div>
+<button class="btn green" id="saveP">Save changes</button></section>
+<section class="card"><h2>Change password</h2>
+<div class="field"><label for="cur">Current password</label><input type="password" id="cur" autocomplete="current-password"></div>
+<div class="field"><label for="nw">New password</label><input type="password" id="nw" autocomplete="new-password"></div>
+<button class="btn" id="savePw">Update password</button></section></div></main></div></div>
+<script src="js/app.js"></script><script src="js/profile.js"></script></body></html>

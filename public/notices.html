@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Notice Board · MessMate</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css"></head>
+<body><div class="shell"><aside class="side" id="side" aria-label="Sidebar"></aside>
+<div><button class="btn alt menu-btn" id="menuBtn" aria-label="Open menu">☰ Menu</button>
+<main>
+<div class="head"><div><h1>Notice Board</h1><p class="muted">Announcements from the manager.</p></div></div>
+<section class="card" id="formCard" hidden><h2>Post a notice</h2>
+<div class="field"><label for="title">Title</label><input id="title" maxlength="80"></div>
+<div class="field"><label for="body">Message</label><textarea id="body" rows="3" maxlength="600"></textarea></div>
+<button class="btn green" id="post">Post notice</button></section>
+<section class="card" id="list"></section></main></div></div>
+<script src="js/app.js"></script><script src="js/notices.js"></script></body></html>

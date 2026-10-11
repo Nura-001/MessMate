@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Dashboard · MessMate</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css"></head>
+<body><div class="shell"><aside class="side" id="side" aria-label="Sidebar"></aside>
+<div><button class="btn alt menu-btn" id="menuBtn" aria-label="Open menu">☰ Menu</button>
+<main>
+<div class="head"><div><h1 id="hello">Dashboard</h1><p class="muted" id="sub"></p></div><div class="field" style="margin:0"><label for="month">Month</label><input type="month" id="month"></div></div>
+<div class="grid" id="stats"></div>
+<div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(300px,1fr))">
+  <section class="card"><h2>My meals today</h2><p class="muted small" id="todayLbl"></p>
+    <div class="row"><label class="check"><input type="checkbox" id="b"> Breakfast</label><label class="check"><input type="checkbox" id="l"> Lunch</label><label class="check"><input type="checkbox" id="d"> Dinner</label></div>
+    <p><button class="btn green" id="saveToday">Save today's meals</button></p></section>
+  <section class="card"><h2>Latest notices</h2><div id="notices"></div><a href="notices.html">All notices</a></section>
+</div>
+<section class="card"><h2>Daily bazar spending</h2><canvas id="chart" aria-label="Bar chart of daily approved expenses"></canvas></section></main></div></div>
+<script src="js/app.js"></script><script src="js/dashboard.js"></script></body></html>
